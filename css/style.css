@@ -1,0 +1,90 @@
+html {
+	background-color: #F3F5FC;
+}
+
+/********************************************/
+header{
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+.logo{
+	margin-left: 50px;
+	display: inline-block;
+}
+header h1 {
+	display: inline-block;
+	margin-left: 29.5%;
+	font-size: 70px;
+	font-family: 'Play', sans-serif;
+	font-weight: bold;
+	text-decoration: underline ;
+	text-shadow: 5px 1px 5px blueviolet;
+		
+}
+
+/********************   *BOTOES INICIAIS*    *************************/
+
+.btnsIniciais{
+	padding: 200px 0 0;
+	text-align: center;
+	width: 33%;
+	height: 300px;
+	margin: auto;
+
+}
+
+.btnIniciar,.btnAdd{
+	width: 200px;
+	height: 150px;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+	border-radius: 50px;
+	margin-left: 19px;
+	font-family: 'Play', sans-serif;
+	border: outset 6px white;
+
+}
+
+.btnIniciar{
+	background-color: blue;
+}
+
+.btnAdd{
+	background-color: blueviolet;
+}
+
+
+
+/****************           *FORCA*       ************************/
+
+.divForca{
+margin-top: 50px;
+width: 800px;
+margin: auto;
+
+}
+
+/**********   RODAPÉ ***************/
+
+footer{
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+	background-color: rgba(138,43,226, 0.45);
+}
+
+footer p{
+	height: 20px;
+	padding: 5px 0 0;
+	margin: 0;
+	font-family: 'Play', sans-serif;
+	color: white;
+}
+
+/*------------- INVISIVEL -----------------*/ 
+.invisivel{
+	display: none;
+}
+
