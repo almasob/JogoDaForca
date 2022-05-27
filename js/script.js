@@ -8,7 +8,7 @@ forca.style.backgroundColor = "#C9F7F7";
 
 
  var btnIniciar = document.querySelector(".btnIniciar");
-  var botoes = document.querySelector(".btnsIniciais");
+ var botoes = document.querySelector(".btnsIniciais");
 
 //
  btnIniciar.addEventListener("click",   function(){
