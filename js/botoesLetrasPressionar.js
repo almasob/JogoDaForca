@@ -7,6 +7,7 @@ var btnsJogo = document.querySelector(".btnsNoJogo");
 
 var erros = 0;
 var acertos = 0;
+var erroOuAcerto = false;
 
 //pegando o valor da letra clicada e comparando com cada letra da PALAVRA SECRETA escondida. Caso seja igual, a letra é mostrada
 function chuteLetra(letra){
@@ -56,9 +57,9 @@ function chuteLetra(letra){
 		//colocamos esta mensagem
 		var perdeu = document.createElement("h1");
 		perdeu.textContent = "VOCE GANHOU!";
-		perdeu.classList.add("msgGanhou");
+		perdeu.classList.add("msgResuldado","msgGanhou");
 		letrasPress.appendChild(perdeu);
-
+		erroOuAcerto = true;
 
 	}
 
@@ -79,8 +80,9 @@ function chuteLetra(letra){
 		//colocamos esta mensagem
 		var perdeu = document.createElement("h1");
 		perdeu.textContent = "Voce perdeu!";
-		perdeu.classList.add("msgPerdeu");
+		perdeu.classList.add("msgResuldado","msgPerdeu");
 		letrasPress.appendChild(perdeu);
+		erroOuAcerto = true;
 
 		//exibimos a palavra na forca
 		palavraSecreta.forEach(function(mostrar){

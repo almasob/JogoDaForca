@@ -17,6 +17,7 @@ forca.style.backgroundColor = "#C9F7F7";
     btnsJogo.classList.remove("invisivel");
     letrasPress.classList.remove("invisivel");
     letrasJas.classList.remove("invisivel");
+    divPalavraSecreta.classList.remove("invisivel");
 
 
     //BOTOES INICIAIS FICAM INVISIVEIS
@@ -29,8 +30,7 @@ forca.style.backgroundColor = "#C9F7F7";
     var palavra = sortearPalavras().toUpperCase();
 
     //AQUI CRIAMOS A PALAVRA SECRETA NA FORCA, INVISIVEL A PRINCIPIO
-        montarPalavraSecreta(palavra);
-
+    montarPalavraSecreta(palavra);
 
 
 
