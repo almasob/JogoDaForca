@@ -65,6 +65,60 @@ margin: auto;
 
 }
 
+/********** LETRAS PARA PRESSIONAR ****************/
+
+.letrasPress{
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+
+}
+
+.estiloLetras{
+	text-align: center;
+	width: 35px;
+	font-size: 25px;
+	border-color: red;
+	border-radius: 10px;
+	font-family: 'Play', sans-serif;
+	padding: 5px;
+	background-color:rgba(0, 200, 150, 0.5) ;
+}
+
+.estiloLetrasClicadas{
+	background-color: grey;
+}
+
+
+/******* BOTÕES DO JOGO **********/
+
+.btnsNoJogo{
+	text-align: center;
+	margin-top: px;
+}
+
+.btnNovoJogo,.btnDesistir{
+	width: 200px;
+	height: 70px;
+	color:#2A05DF;
+	font-size: 20px;
+	font-weight: bold;
+	border-radius: 50px;
+	margin-left: 19px;
+	font-family: 'Play', sans-serif;
+	border: outset 6px white;
+}
+
+.btnNovoJogo{
+	background-color: lightgreen;
+}
+
+.btnDesistir{
+	background-color: indianred;
+}
+
+
+
 /**********   RODAPÉ ***************/
 
 footer{

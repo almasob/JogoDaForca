@@ -14,17 +14,53 @@
 		<h1>JOGO DA FORCA</h1>
 	</header>
 	<main>
-		<div class="divForca invisivel ">
-			<canvas width="800" height="430" ></canvas> 
+		<div class="divForca ">
+			<canvas width="800" height="425"><h1>ola</h1></canvas> 
 		</div>
-		<div class="btnsIniciais ">
+		<div class="letrasPress ">
+			<button onclick="chuteLetra(this.textContent)" class="estiloLetras letraA">A</button>
+			<button onclick="chuteLetra(this.textContent)" class="estiloLetras letraB">B</button>
+			<button onclick="chuteLetra(this.textContent)" class="estiloLetras letraC">C</button>
+			<button onclick="chuteLetra(this.textContent)" class="estiloLetras letraD">D</button>
+			<button onclick="chuteLetra(this.textContent)" class="estiloLetras letraE">E</button>
+			<button onclick="chuteLetra(this.textContent)" class="estiloLetras letraF">F</button>
+			<button onclick="chuteLetra(this.textContent)" class="estiloLetras letraG">G</button>
+			<button onclick="chuteLetra(this.textContent)" class="estiloLetras letraH">H</button>
+			<button onclick="chuteLetra(this.textContent)" class="estiloLetras letraI">I</button>
+			<button onclick="chuteLetra(this.textContent)" class="estiloLetras letraJ">J</button>
+			<button onclick="chuteLetra(this.textContent)" class="estiloLetras letraK">K</button>
+			<button onclick="chuteLetra(this.textContent)" class="estiloLetras letraL">L</button>
+			<button onclick="chuteLetra(this.textContent)" class="estiloLetras letraM">M</button>
+			<button onclick="chuteLetra(this.textContent)" class="estiloLetras letraN">N</button>
+			<button onclick="chuteLetra(this.textContent)" class="estiloLetras letraO">O</button>
+			<button onclick="chuteLetra(this.textContent)" class="estiloLetras letraP">P</button>
+			<button onclick="chuteLetra(this.textContent)" class="estiloLetras letraQ">Q</button>
+			<button onclick="chuteLetra(this.textContent)" class="estiloLetras letraR">R</button>
+			<button onclick="chuteLetra(this.textContent)" class="estiloLetras letraS">S</button>
+			<button onclick="chuteLetra(this.textContent)" class="estiloLetras letraT">T</button>
+			<button onclick="chuteLetra(this.textContent)" class="estiloLetras letraU">U</button>
+			<button onclick="chuteLetra(this.textContent)" class="estiloLetras letraV">V</button>
+			<button onclick="chuteLetra(this.textContent)" class="estiloLetras letraW">W</button>
+			<button onclick="chuteLetra(this.textContent)" class="estiloLetras letraX">X</button>
+			<button onclick="chuteLetra(this.textContent)" class="estiloLetras letraY">Y</button>
+			<button onclick="chuteLetra(this.textContent)" class="estiloLetras letraZ">Z</button>
+		</div>
+		<div class="btnsIniciais invisivel ">
 			<button class="btnIniciar">Iniciar jogo</button>
 			<button class="btnAdd">Adicionar Palavra</button>
+		</div>
+		<div class="btnsNoJogo ">
+			<button class="btnNovoJogo">Novo jogo!</button>
+			<button class="btnDesistir">Desistir!</button>
 		</div>
 	</main>
 	<footer>
 		<p class="copyright"> &copy; Copyright Allan Machado Sobral - 2022</p>
 	</footer>
 	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/desenhoForca.js"></script>
+	<script type="text/javascript" src="js/botoesNoJogo.js"></script>
+	<script type="text/javascript" src="js/palavrasAdivinha.js"></script>
+	<script type="text/javascript" src="js/botoesLetrasPressionar.js"></script>
 </body>
 </html>

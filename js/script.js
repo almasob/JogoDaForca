@@ -1,4 +1,3 @@
-
 //tela canvas para criação da forca
 var telaCanvas = document.querySelector("canvas");
 var pincel = telaCanvas.getContext("2d");
@@ -6,29 +5,42 @@ var forca = document.querySelector(".divForca");
 forca.style.backgroundColor = "#C9F7F7";
 
 
-
  var btnIniciar = document.querySelector(".btnIniciar");
- var botoes = document.querySelector(".btnsIniciais");
+ var btnsIniciais = document.querySelector(".btnsIniciais");
+ var btnsJogo = document.querySelector(".btnsNoJogo");
+ var letrasPress = document.querySelector(".letrasPress");
 
-//
- btnIniciar.addEventListener("click",   function(){
+//********* AO CLICAR NO BOTAO INICIAR JOGO *************************************************
+    btnIniciar.addEventListener("click",   function(){
+
+    //DIV FORCA , BOTÕES NO JOGO e LETRAS PRA PRESSIONAR FICAM VISIVEIS 
     forca.classList.remove("invisivel");
-    botoes.classList.add("invisivel");
+    btnsJogo.classList.remove("invisivel");
+    letrasPress.classList.remove("invisivel");
+
+
+    //BOTOES INICIAIS FICAM INVISIVEIS
+    btnsIniciais.classList.add("invisivel");
+
+    //DESENHAMOS A FORCA
     desenhaForca();
-    
+
+    //SORTEAMOS A PALAVRA E TRANSFORMAMOS EM MAIUSCULO
+    var palavra = sortearPalavras().toUpperCase();
+
+    //AS LETRAS DA PALAVRA A PRINCIPIO ESTÃO NA MESMA COR DE FUNDO PARA NÃO APARECER
+    var corLetras = "red";
+
+    //AQUI É PARA DARMOS A DISTANCIA CERTA A CADA TRAÇO DAS LETRAS
+    var distancia = 0;
+
+    //AQUI CRIAMOS OS TRAÇOS E COLOCAMOS AS LETRAS EM CIMA, NA COR DE FUNDO PARA NÃO APARECER A PRINCIPIO
+    for(i =0; i < palavra.length; i++){
+        desenhaLinhasParaPalavra(distancia);
+        letrasDaPalavraNaLinha(distancia,palavra[i],corLetras);
+        distancia = distancia + 50;
+    };
+
+    console.log(palavra);
+
  });
-
-
-
-  function desenhaForca(){
-    pincel.fillStyle = "black";
-    pincel.beginPath();
-    pincel.moveTo(170,350);
-    pincel.lineTo(230,350);
-    pincel.moveTo(200,350);
-    pincel.lineTo(200,20);
-    pincel.lineTo(400,20);
-    pincel.lineTo(400,50);
-    pincel.lineWidth = 5;
-    pincel.stroke();
- }   
