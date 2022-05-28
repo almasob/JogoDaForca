@@ -7,7 +7,6 @@ forca.style.backgroundColor = "#C9F7F7";
 
  var btnIniciar = document.querySelector(".btnIniciar");
  var btnsIniciais = document.querySelector(".btnsIniciais");
- var btnsJogo = document.querySelector(".btnsNoJogo");
  var letrasPress = document.querySelector(".letrasPress");
 
 //********* AO CLICAR NO BOTAO INICIAR JOGO *************************************************
@@ -17,6 +16,7 @@ forca.style.backgroundColor = "#C9F7F7";
     forca.classList.remove("invisivel");
     btnsJogo.classList.remove("invisivel");
     letrasPress.classList.remove("invisivel");
+    letrasJas.classList.remove("invisivel");
 
 
     //BOTOES INICIAIS FICAM INVISIVEIS
@@ -28,19 +28,24 @@ forca.style.backgroundColor = "#C9F7F7";
     //SORTEAMOS A PALAVRA E TRANSFORMAMOS EM MAIUSCULO
     var palavra = sortearPalavras().toUpperCase();
 
-    //AS LETRAS DA PALAVRA A PRINCIPIO ESTÃO NA MESMA COR DE FUNDO PARA NÃO APARECER
-    var corLetras = "red";
+    //AQUI CRIAMOS A PALAVRA SECRETA NA FORCA, INVISIVEL A PRINCIPIO
+        montarPalavraSecreta(palavra);
 
-    //AQUI É PARA DARMOS A DISTANCIA CERTA A CADA TRAÇO DAS LETRAS
-    var distancia = 0;
 
-    //AQUI CRIAMOS OS TRAÇOS E COLOCAMOS AS LETRAS EM CIMA, NA COR DE FUNDO PARA NÃO APARECER A PRINCIPIO
-    for(i =0; i < palavra.length; i++){
-        desenhaLinhasParaPalavra(distancia);
-        letrasDaPalavraNaLinha(distancia,palavra[i],corLetras);
-        distancia = distancia + 50;
-    };
 
-    console.log(palavra);
 
  });
+
+
+
+    //MONTAR PALAVRA NA FORCA A DIV TEM QUE TER A CLASSE LETRASECRETA E ESCONDERLETRA
+    function montarPalavraSecreta(palavra){
+        for(i =0; i < palavra.length; i++){
+            var div = document.createElement("div");
+            div.classList.add("letraSecreta", "esconderLetra");
+            div.textContent = palavra[i];
+            divPalavraSecreta.appendChild(div);
+        }
+    }
+
+

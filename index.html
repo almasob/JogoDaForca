@@ -14,10 +14,18 @@
 		<h1>JOGO DA FORCA</h1>
 	</header>
 	<main>
-		<div class="divForca ">
-			<canvas width="800" height="425"><h1>ola</h1></canvas> 
+		<div class="divForca invisivel ">
+			<canvas width="800" height="425"></canvas> 
 		</div>
-		<div class="letrasPress ">
+
+		<div class="letrasJaPressionadas invisivel">
+
+		</div>
+
+		<div class="palavraSecreta">					
+		
+		</div>
+		<div class="letrasPress invisivel">
 			<button onclick="chuteLetra(this.textContent)" class="estiloLetras letraA">A</button>
 			<button onclick="chuteLetra(this.textContent)" class="estiloLetras letraB">B</button>
 			<button onclick="chuteLetra(this.textContent)" class="estiloLetras letraC">C</button>
@@ -45,11 +53,11 @@
 			<button onclick="chuteLetra(this.textContent)" class="estiloLetras letraY">Y</button>
 			<button onclick="chuteLetra(this.textContent)" class="estiloLetras letraZ">Z</button>
 		</div>
-		<div class="btnsIniciais invisivel ">
+		<div class="btnsIniciais  ">
 			<button class="btnIniciar">Iniciar jogo</button>
 			<button class="btnAdd">Adicionar Palavra</button>
 		</div>
-		<div class="btnsNoJogo ">
+		<div class="btnsNoJogo invisivel">
 			<button class="btnNovoJogo">Novo jogo!</button>
 			<button class="btnDesistir">Desistir!</button>
 		</div>

@@ -74,6 +74,25 @@ margin: auto;
 
 }
 
+.palavraSecreta{
+	position: absolute;
+	width: 800px;
+	text-align: center;
+	background-color: wheat;
+	left: 25%;
+	top: 63%;
+}
+
+.palavraSecreta div{
+	display: inline-block;
+	border-bottom: solid black 5px;
+	font-size: 40px;
+	margin-right: 3px;
+	width: 30px;
+
+
+}
+
 .estiloLetras{
 	text-align: center;
 	width: 35px;
@@ -85,9 +104,22 @@ margin: auto;
 	background-color:rgba(0, 200, 150, 0.5) ;
 }
 
-.estiloLetrasClicadas{
-	background-color: grey;
+.esconderLetra{
+	color:wheat ;
 }
+
+/********* LETRAS JA PRESSIONADAS ****************/
+
+.letrasJaPressionadas{
+	background-color: blue;
+	width: 250px;
+	height: 250px;
+	position: absolute;
+	top: 200px;
+	right: 150px;
+}
+
+
 
 
 /******* BOTÕES DO JOGO **********/
@@ -142,3 +174,16 @@ footer p{
 	display: none;
 }
 
+/************  PERDEU ou GANHOU***************/
+
+.msgPerdeu{
+	font-size: 40px;
+	color: red;
+	font-weight: bold;
+}
+
+.msgGanhou{
+	font-size: 40px;
+	color: green;
+	font-weight: bold;
+}

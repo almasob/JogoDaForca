@@ -51,18 +51,4 @@ function desenhaPernaD(){
     pincel.stroke();
  }
 
-function desenhaLinhasParaPalavra(distancia){
-    pincel.beginPath();
-    pincel.moveTo(10+distancia,420);
-    pincel.lineTo(50+distancia,420);
-    pincel.stroke();
 
-}
-
-
-function letrasDaPalavraNaLinha(distancia,letra,cor){
-    pincel.font = " 40px Play";
-    pincel.fillStyle = cor;
-    pincel.fillText(letra, 15 +distancia,415);
-
-}

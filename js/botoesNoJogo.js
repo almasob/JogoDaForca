@@ -5,7 +5,12 @@ btnDesistir.addEventListener("click",function(){
 
 	btnsJogo.classList.add("invisivel");
 	forca.classList.add("invisivel");
+	letrasJas.classList.add("invisivel");
+	divPalavraSecreta.classList.add("invisivel");
+	letrasPress.classList.add("invisivel");
+	
 	btnsIniciais.classList.remove("invisivel");
+
 
 	limpaLetras();
 
