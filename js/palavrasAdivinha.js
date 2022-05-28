@@ -1,4 +1,4 @@
-var palavras = ["arroz","feijão","batata","papagaio","orangotango","sensacional","maravilhosamente","feijoada","bebedouro","residencial"];
+var palavras = ["orangotango","estratosfera","estilo"];
 
 //MAXIMO 25 LETRAS
 function sortearPalavras(){

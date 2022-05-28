@@ -150,6 +150,40 @@ margin: auto;
 }
 
 
+/****** ADICIONAR PALAVRAS **********/
+
+.divAddPalavras{
+	width: 500px;
+	margin: auto;
+	padding-top: 100px;
+}
+
+.inputAdd{
+	width: 450px;
+	height: 300px;
+	font-size: 30px;
+	font-weight: bold;
+	display: block;
+	margin-bottom: 80px;
+
+}
+
+.btnSalvar,.btnVoltar{
+	width: 200px;
+	height: 70px;
+	color:#2A05DF;
+	font-size: 20px;
+	font-weight: bold;
+	border-radius: 50px;
+	margin-right: 19px;
+	font-family: 'Play', sans-serif;
+	border: outset 6px white;
+
+}
+
+.btnVoltar{
+
+}
 
 /**********   RODAPÉ ***************/
 

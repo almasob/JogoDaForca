@@ -18,7 +18,15 @@
 			<canvas width="800" height="425"></canvas> 
 		</div>
 
-		<div class="letrasJaPressionadas invisivel"></div>
+		<div class="divAddPalavras invisivel">
+			<input class="inputAdd" type="text" name="" maxlength="25" placeholder="Digite aqui...">
+			<button class="btnSalvar">Salvar</button>
+			<button class="btnVoltar">Voltar</button>
+
+
+		</div>
+
+		<div class="letrasJaPressionadas invisivel"><h1>Letras já utilizadas...</h1></div>
 
 		<div class="palavraSecreta"></div>
 
@@ -50,7 +58,7 @@
 			<button onclick="chuteLetra(this.textContent)" class="estiloLetras letraY">Y</button>
 			<button onclick="chuteLetra(this.textContent)" class="estiloLetras letraZ">Z</button>
 		</div>
-		<div class="btnsIniciais  ">
+		<div class="btnsIniciais ">
 			<button class="btnIniciar">Iniciar jogo</button>
 			<button class="btnAdd">Adicionar Palavra</button>
 		</div>
@@ -67,5 +75,6 @@
 	<script type="text/javascript" src="js/botoesNoJogo.js"></script>
 	<script type="text/javascript" src="js/palavrasAdivinha.js"></script>
 	<script type="text/javascript" src="js/botoesLetrasPressionar.js"></script>
+	<script type="text/javascript" src="js/adicionarPalavra.js"></script>
 </body>
 </html>

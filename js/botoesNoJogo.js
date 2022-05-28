@@ -13,9 +13,11 @@ btnDesistir.addEventListener("click",function(){
 	letrasPress.classList.add("invisivel");
 
 	btnsIniciais.classList.remove("invisivel");
-
 	divPalavraSecreta.innerHTML="";
-	letrasJas.innerHTML= "";
+	letrasJas.innerHTML="";
+	var h1 = document.createElement("h1");
+	h1.textContent = "Letras já utilizadas..."
+	letrasJas.appendChild(h1);
 	limparTela();
 
 	//remover mensagem "msgResuldado" caso tenha
@@ -40,12 +42,20 @@ btnDesistir.addEventListener("click",function(){
 
 //NOVO JOGO *********************************************
 btnNovoJogo.addEventListener("click",function(){
+	//limpa quadro de letras ja utilizadas e div palavra secreta
 	divPalavraSecreta.innerHTML="";
 	letrasJas.innerHTML= "";
+	//adiciona o titulo do quadro de letras ja utilizadas
+	var h1 = document.createElement("h1");
+	h1.textContent = "Letras já utilizadas..."
+	letrasJas.appendChild(h1);
+	//limpa tela da forca e depois desenha somente a forca sem os erros
 	limparTela();
 	desenhaForca();
+	//zeramos erros e acertos
 	erros=0;
 	acertos=0;
+	//sorteamos e montamos a nova palavra
 	var palavra = sortearPalavras().toUpperCase();
 	montarPalavraSecreta(palavra);
 
