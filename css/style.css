@@ -22,6 +22,24 @@ header h1 {
 		
 }
 
+/************  MENSAGEM INICIAL ************************/
+.divMsgInicial{
+	padding-top: 30px;
+	font-family: 'Play', sans-serif;
+	width: 50%;
+	margin: auto;
+}
+
+.divMsgInicial h1{
+	padding-bottom: 20px;
+	font-size:30px ;
+	text-align: center;
+}
+
+.divMsgInicial p{
+	text-align: center;
+}
+
 /********************   *BOTOES INICIAIS*    *************************/
 
 .btnsIniciais{
@@ -33,7 +51,7 @@ header h1 {
 
 }
 
-.btnIniciar,.btnAdd{
+.btnIniciar,.btnAdd,.btnAleatorio{
 	width: 200px;
 	height: 150px;
 	color: white;
@@ -52,6 +70,10 @@ header h1 {
 
 .btnAdd{
 	background-color: blueviolet;
+}
+
+.btnAleatorio{
+	background-color: yellowgreen;
 }
 
 

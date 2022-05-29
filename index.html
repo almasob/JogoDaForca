@@ -14,6 +14,14 @@
 		<h1>JOGO DA FORCA</h1>
 	</header>
 	<main>
+		<section class="divMsgInicial">
+			<h1>Seja bem vindo!</h1>
+			<p>Para começar, você pode adicionar quantas palavras que quiser...<br>
+				Ou clicar no botão PALAVRAS PADRÃO, que adicionará 10 palavras selecionadas para você brincar...<br>
+				E não se preocupe, caso as palavras acabem, voce pode adicionar mais para continuar brincando...<br><br> 
+				<span>Obs: não se preocupe com os acentos, pois eles não serão considerados, ok?</span>
+			</p>
+		</section>
 		<div class="divForca invisivel ">
 			<canvas width="800" height="425"></canvas> 
 		</div>
@@ -59,12 +67,13 @@
 			<button onclick="chuteLetra(this.textContent)" class="estiloLetras letraZ">Z</button>
 		</div>
 		<div class="btnsIniciais ">
-			<button class="btnIniciar">Iniciar jogo</button>
-			<button class="btnAdd">Adicionar Palavra</button>
+			<button class="btnIniciar invisivel">Iniciar jogo</button>
+			<button class="btnAdd">Adicionar Palavras</button>
+			<button class="btnAleatorio">Palavras padrão</button>
 		</div>
 		<div class="btnsNoJogo invisivel">
 			<button class="btnNovoJogo">Novo jogo!</button>
-			<button class="btnDesistir">Desistir!</button>
+			<button class="btnDesistir">Voltar!</button>
 		</div>
 	</main>
 	<footer>
