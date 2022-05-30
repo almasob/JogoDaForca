@@ -5,6 +5,7 @@ btnDesistir.addEventListener("click",function(){
 
 	btnsJogo.classList.add("invisivel");
 	forca.classList.add("invisivel");
+	forcaCel.classList.add("invisivel","invisivelCel");
 	letrasJas.classList.add("invisivel");
 	divPalavraSecreta.classList.add("invisivel");
 	letrasPress.classList.add("invisivel");
@@ -16,6 +17,7 @@ btnDesistir.addEventListener("click",function(){
 	h1.textContent = "Letras já utilizadas..."
 	letrasJas.appendChild(h1);
 	limparTela();
+	limparTelaCel();
 
 	//remover mensagem "msgResuldado" caso o tenha
 	if(erroOuAcerto){
@@ -52,7 +54,9 @@ btnNovoJogo.addEventListener("click",function(){
 	
 	//limpa tela da forca e depois desenha somente a forca sem os erros
 	limparTela();
+	limparTelaCel();
 	desenhaForca();
+	desenhaForcaCel();
 
 	//sorteamos e montamos a nova palavra
 	var palavra = sortearPalavras().toUpperCase();
@@ -86,6 +90,10 @@ btnNovoJogo.addEventListener("click",function(){
 
 function limparTela(){
 	pincel.clearRect(0,0,800,425);
+}
+
+function limparTelaCel(){
+	pincelCel.clearRect(0,0,300,400);
 }
 
 

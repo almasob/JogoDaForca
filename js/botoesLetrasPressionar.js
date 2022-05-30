@@ -67,12 +67,30 @@ function chuteLetra(letra){
 	if(!achou && !temNaLista){
 		erros++;
 
-	if(erros==1)desenhaCabeca();
-	if(erros==2)desenhaCorpo();
-	if(erros==3)desenhaBracoD();
-	if(erros==4)desenhaBracoE();
-	if(erros==5)desenhaPernaD();
-	if(erros==6)desenhaPernaE();
+	if(erros==1){
+		desenhaCabeca();
+		desenhaCabecaCel();
+	}
+	if(erros==2){
+		desenhaCorpo();
+		desenhaCorpoCel();
+	}
+	if(erros==3){
+		desenhaBracoD();
+		desenhaBracoDCel();
+	}
+	if(erros==4){
+		desenhaBracoE();
+		desenhaBracoECel();
+	}
+	if(erros==5){
+		desenhaPernaD();
+		desenhaPernaDCel();
+	}
+	if(erros==6){
+		desenhaPernaE();
+		desenhaPernaECel();
+	}
 	}
 
 

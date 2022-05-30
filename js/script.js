@@ -1,5 +1,5 @@
 //tela canvas para criação da forca
-var telaCanvas = document.querySelector("canvas");
+var telaCanvas = document.querySelector("#canvasPc");
 var pincel = telaCanvas.getContext("2d");
 var forca = document.querySelector(".divForca");
 
@@ -20,6 +20,8 @@ var forca = document.querySelector(".divForca");
     if(palavra != ""){
         //DIV FORCA , BOTÕES NO JOGO e LETRAS PRA PRESSIONAR FICAM VISIVEIS 
         forca.classList.remove("invisivel");
+        forcaCel.classList.remove("invisivel","invisivelCel");
+        forcaCel.classList.add("forcaBlock");
         btnsJogo.classList.remove("invisivel");
         letrasPress.classList.remove("invisivel");
         letrasJas.classList.remove("invisivel");
@@ -32,6 +34,7 @@ var forca = document.querySelector(".divForca");
 
         //DESENHAMOS A FORCA
         desenhaForca();
+        desenhaForcaCel();
 
         //AQUI CRIAMOS A PALAVRA SECRETA NA FORCA, INVISIVEL A PRINCIPIO
         montarPalavraSecreta(palavra);
