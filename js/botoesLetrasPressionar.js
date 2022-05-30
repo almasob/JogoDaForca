@@ -44,6 +44,7 @@ function chuteLetra(letra){
 	for(i= 0; i < palavraSecreta.length; i++){
 		if(letra == palavraSecreta[i].textContent){
 			palavraSecreta[i].classList.remove("esconderLetra");
+			palavraSecreta[i].classList.add("sombra");
 			achou = true;
 			acertos++;
 		} 
@@ -63,7 +64,8 @@ function chuteLetra(letra){
 
 	}
 
-	if(!achou && !temNaLista)erros++;
+	if(!achou && !temNaLista){
+		erros++;
 
 	if(erros==1)desenhaCabeca();
 	if(erros==2)desenhaCorpo();
@@ -71,6 +73,9 @@ function chuteLetra(letra){
 	if(erros==4)desenhaBracoE();
 	if(erros==5)desenhaPernaD();
 	if(erros==6)desenhaPernaE();
+	}
+
+
 
 //SE O CORPO FOI PREENCHIDO VOCE PERDEU, TIRA AS LETRAS E COLOCA A PALAVRA CERTA
 	if(erros==6){

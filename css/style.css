@@ -1,19 +1,28 @@
 html {
-	background-color: #F3F5FC;
+	background-color: #ffddb3;
 }
+
+button{
+	cursor: pointer;
+}
+
+#canvas{
+	width: 450px;
+	height:350px;
+}
+
 
 /********************************************/
 header{
 	margin-top: 10px;
 	margin-bottom: 20px;
+	text-align: center;
+	background-color: rgba(102, 56, 0, 0.3);
 }
-.logo{
-	margin-left: 50px;
-	display: inline-block;
-}
+
 header h1 {
+	letter-spacing: 8px;
 	display: inline-block;
-	margin-left: 29.5%;
 	font-size: 70px;
 	font-family: 'Play', sans-serif;
 	font-weight: bold;
@@ -24,20 +33,27 @@ header h1 {
 
 /************  MENSAGEM INICIAL ************************/
 .divMsgInicial{
-	padding-top: 30px;
+	padding-top: 25px;
 	font-family: 'Play', sans-serif;
 	width: 50%;
 	margin: auto;
+	line-height: 1.4;
+	text-shadow: 0px 0px 5px blueviolet ;
+
 }
 
 .divMsgInicial h1{
 	padding-bottom: 20px;
 	font-size:30px ;
 	text-align: center;
+	font-weight: bold;
+	text-decoration: underline;
 }
 
 .divMsgInicial p{
 	text-align: center;
+	font-style: italic;
+	font-weight: bold;
 }
 
 /********************   *BOTOES INICIAIS*    *************************/
@@ -46,14 +62,14 @@ header h1 {
 	padding: 200px 0 0;
 	text-align: center;
 	width: 33%;
-	height: 300px;
+	height: 200px;
 	margin: auto;
 
 }
 
 .btnIniciar,.btnAdd,.btnAleatorio{
 	width: 200px;
-	height: 150px;
+	height: 110px;
 	color: white;
 	font-size: 20px;
 	font-weight: bold;
@@ -61,6 +77,8 @@ header h1 {
 	margin-left: 19px;
 	font-family: 'Play', sans-serif;
 	border: outset 6px white;
+	text-shadow: 3px 3px 1px black ;
+	box-shadow: 0px 0px 10px blueviolet ;
 
 }
 
@@ -69,11 +87,11 @@ header h1 {
 }
 
 .btnAdd{
-	background-color: blueviolet;
+	background-color: #6918b4;
 }
 
 .btnAleatorio{
-	background-color: yellowgreen;
+	background-color: #7ba428;
 }
 
 
@@ -96,49 +114,80 @@ margin: auto;
 
 }
 
+.estiloLetras{
+	text-align: center;
+	width: 35px;
+	font-size: 25px;
+	border-radius: 10px;
+	font-family: 'Play', sans-serif;
+	padding: 5px;
+	background-color:#1affb2;
+	box-shadow: 0px 0px 10px blueviolet;
+	color: red;
+	font-weight: bold;
+}
+
+.estiloLetras:active{
+	box-shadow: 0px 0px 20px black;
+}
+
+/***** PALAVRA SECRETA ************/
+
 .palavraSecreta{
 	position: absolute;
 	width: 800px;
 	text-align: center;
-	background-color: wheat;
 	left: 25%;
 	top: 63%;
 }
 
 .palavraSecreta div{
 	display: inline-block;
-	border-bottom: solid black 5px;
+	border-bottom: solid #513315 5px;
 	font-size: 40px;
 	margin-right: 3px;
 	width: 30px;
 
-
 }
 
-.estiloLetras{
-	text-align: center;
-	width: 35px;
-	font-size: 25px;
-	border-color: red;
-	border-radius: 10px;
-	font-family: 'Play', sans-serif;
-	padding: 5px;
-	background-color:rgba(0, 200, 150, 0.5) ;
-}
+.letraSecreta{
+	color: #0033cc;
+	}
 
 .esconderLetra{
-	color:wheat ;
+	color:#ffddb3;
+	text-shadow: none;
 }
+
+.sombra{
+	text-shadow: 0px 0px 10px blueviolet;
+}
+
+
 
 /********* LETRAS JA PRESSIONADAS ****************/
 
 .letrasJaPressionadas{
-	background-color: blue;
-	width: 250px;
-	height: 250px;
+	background-color: #f3e9fc;
+	box-shadow: 0px 0px 10px blueviolet;
+	border-radius: 50px;
+	width: 200px;
+	height: 350px;
 	position: absolute;
-	top: 200px;
-	right: 150px;
+	top: 120px;
+	right: 120px;
+	text-align: center;
+	padding-top: 10px;
+	font-family: 'Play', sans-serif;
+	font-weight: bold;
+	text-shadow: 0px 0px 10px blueviolet;
+	font-size: 18px;
+}
+
+.letrasJaPressionadas h1{
+	font-style: italic;
+	font-weight: bolder;
+	margin-bottom: 5px;
 }
 
 
@@ -154,21 +203,23 @@ margin: auto;
 .btnNovoJogo,.btnDesistir{
 	width: 200px;
 	height: 70px;
-	color:#2A05DF;
+	color:white;
 	font-size: 20px;
 	font-weight: bold;
 	border-radius: 50px;
 	margin-left: 19px;
 	font-family: 'Play', sans-serif;
 	border: outset 6px white;
+	text-shadow: 3px 3px 1px black ;
+	box-shadow: 0px 0px 10px blueviolet ;
 }
 
 .btnNovoJogo{
-	background-color: lightgreen;
+	background-color: #239023;
 }
 
 .btnDesistir{
-	background-color: indianred;
+	background-color: #cc0000;
 }
 
 
@@ -178,33 +229,60 @@ margin: auto;
 	width: 500px;
 	margin: auto;
 	padding-top: 100px;
+	text-align: center;
 }
 
 .inputAdd{
 	width: 450px;
-	height: 300px;
+	height: 200px;
 	font-size: 30px;
 	font-weight: bold;
 	display: block;
 	margin-bottom: 80px;
+	background-color: #ffe8cc;
+	border-radius: 50px;
+	margin-left: 15px;
+	border: none;
+	color: #008000;
+	box-shadow: 0px 0px 10px blueviolet;
+	text-shadow: 0px 0px 10px blueviolet;
+
 
 }
 
 .btnSalvar,.btnVoltar{
 	width: 200px;
 	height: 70px;
-	color:#2A05DF;
+	color:white;
 	font-size: 20px;
 	font-weight: bold;
 	border-radius: 50px;
 	margin-right: 19px;
 	font-family: 'Play', sans-serif;
 	border: outset 6px white;
+	text-shadow: 3px 3px 1px black ;
+	box-shadow: 0px 0px 10px blueviolet ;
 
 }
 
 .btnVoltar{
+	background-color: #cc0000;	
+}
 
+.btnSalvar{
+	background-color: #2e8b57;
+}
+
+.inputAdd::placeholder{
+	color: white;
+	font-family: 'Play', sans-serif;
+	text-shadow: 3px 3px 10px blueviolet ;
+	height: 39px;
+}
+
+.inputAdd:focus{
+	border: none;
+	outline: none;
 }
 
 /**********   RODAPÉ ***************/
@@ -214,15 +292,25 @@ footer{
 	position: absolute;
 	bottom: 0;
 	text-align: center;
-	background-color: rgba(138,43,226, 0.45);
+	background-color: #663800;
 }
 
 footer p{
 	height: 20px;
 	padding: 5px 0 0;
-	margin: 0;
 	font-family: 'Play', sans-serif;
 	color: white;
+}
+
+footer a{
+	color: whitesmoke;
+	text-decoration: none;
+}
+
+footer a:hover{
+	color: black;
+	text-decoration: none;
+	
 }
 
 /*------------- INVISIVEL -----------------*/ 
@@ -232,14 +320,121 @@ footer p{
 
 /************  PERDEU ou GANHOU***************/
 
+
+   @keyframes animate{
+	   	   0%{
+	     opacity: 0;
+	   }
+	   50%{
+	     opacity: 0.7;
+	   }
+	   100%{
+	     opacity: 0;
+	   }
+   }
+
+
+
 .msgPerdeu{
 	font-size: 40px;
 	color: red;
 	font-weight: bold;
+	font-family: 'Play', sans-serif;
+	animation-name: animate;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	box-shadow: 0px 0px 10px 10px  #660000 ;
+	text-shadow: 0px 0px 30px #660000;
+
 }
 
 .msgGanhou{
 	font-size: 40px;
-	color: green;
+	color: #e600e6;
 	font-weight: bold;
+	box-shadow: 0px 0px 10px 10px  #1aff1a ;
+	text-shadow: 0px 0px 30px #1aff1a;
+	font-family: 'Play', sans-serif;
+	animation-name: animate;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
 }
+
+
+/* RESPONSIVIDADE PARA DISPOSITIVOS MOVEIS ******************************************/
+
+
+@media screen and (max-width: 480px) { 
+
+/*** TITULO ********************/
+
+	header h1{
+		font-size: 36px;
+	}
+
+/******** MENSAGEM INCIAL **********/
+
+.divMsgInicial{
+	width: 90%;
+}
+
+.divMsgInicial h1{
+	font-size: 20px;
+}
+
+.divMsgInicial p{
+	font-size: 11px;
+}
+
+/***** BOTÕES TELA INICIAL *******/
+.btnsIniciais{
+	padding: 150px 0 0;
+	width: 100%;
+}
+
+.btnIniciar,.btnAdd,.btnAleatorio{
+	font-size: 15px;
+	width: 150px;
+	height: 80px;
+}
+
+/******* RODAPÉE ***********/
+footer p{
+	height: 17px;
+	font-size: 11px;
+}
+
+
+/********** ADICIONAR PALAVRAS ***************/
+
+.divAddPalavras{
+	width: 90%;
+}
+
+.inputAdd{
+	width: 100%;
+	height: 150px;
+	margin-left: 0;
+	font-size: 25px;
+}
+
+/******** LETRAS JA PRESSIONADAS ***************/
+.letrasJaPressionadas{
+	width: 100px;
+	right: 1px;
+	font-size: 13px;
+}
+
+/*********** PALAVRA SECRETA **************/
+
+.palavraSecreta div{
+	font-size: 15px;
+	width: 20px;
+}
+
+.palavraSecreta{
+	width: 100%;
+	left: 0px;
+}
+}
+

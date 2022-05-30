@@ -2,7 +2,7 @@
 var telaCanvas = document.querySelector("canvas");
 var pincel = telaCanvas.getContext("2d");
 var forca = document.querySelector(".divForca");
-forca.style.backgroundColor = "#C9F7F7";
+
 
 
  var btnIniciar = document.querySelector(".btnIniciar");

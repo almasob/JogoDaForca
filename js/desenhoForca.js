@@ -1,6 +1,10 @@
   function desenhaForca(){
-    pincel.strokeStyle = "black";
+    pincel.strokeStyle = "#513315";
     pincel.beginPath();
+    pincel.shadowBlur = 10;
+    pincel.shadowOffsetX = 5;
+    pincel.shadowOffsetY = 5;
+    pincel.shadowColor = "blueviolet";
     pincel.moveTo(170,350);
     pincel.lineTo(230,350);
     pincel.moveTo(200,350);

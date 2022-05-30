@@ -23,6 +23,7 @@ btnAleatorio.addEventListener("click",function(){
 	palavras.push("orangotango","futebol","branco","preto","molho","sensacional","arroz","morango","torta","capacete");
 	btnAleatorio.classList.add("invisivel");
 	btnIniciar.classList.remove("invisivel");
+	divMsgInicial.classList.add("invisivel");
 })
 
 
