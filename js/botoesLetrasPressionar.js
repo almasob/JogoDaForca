@@ -43,10 +43,12 @@ function chuteLetra(letra){
 		//comparamos a letra pressionada com as letras da palavra secreta
 	for(i= 0; i < palavraSecreta.length; i++){
 		if(letra == palavraSecreta[i].textContent){
-			palavraSecreta[i].classList.remove("esconderLetra");
-			palavraSecreta[i].classList.add("sombra");
-			achou = true;
-			acertos++;
+			if(!temNaLista){
+				palavraSecreta[i].classList.remove("esconderLetra");
+				palavraSecreta[i].classList.add("sombra");
+				achou = true;
+				acertos++;
+			}
 		} 
 	}
 
