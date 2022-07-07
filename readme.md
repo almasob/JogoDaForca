@@ -7,7 +7,7 @@
 <h2>Descrição</h2>
 <p>Projeto proposto durante o curso da Oracle ONE - Alura, onde o objetivo principal era implementar a lógica do jogo.</p>
 
-<h2>Funcionalidade</h2>
+<h2>Funcionalidades</h2>
 <ul>
 	<li>Para iniciar o jogo, devemos adicionar palavras próprias ou padrão</li>
 	<li>As palavras não se repetem</li>
